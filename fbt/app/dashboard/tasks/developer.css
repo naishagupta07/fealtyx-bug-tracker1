@@ -1,0 +1,251 @@
+/* ===== Developer Dashboard (Clean + Consistent with Manager) ===== */
+
+:root {
+  --background: #f9fafb;
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+  --text-dark: #1e293b;
+  --text-light: #6b7280;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --success: #16a34a;
+  --warning-bg: #fef3c7;
+  --warning-text: #92400e;
+  --danger: #dc2626;
+  --danger-bg: #fee2e2;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Page Layout ===== */
+.developer-page {
+  background-color: var(--background);
+  min-height: 100vh;
+  padding: 40px;
+  font-family: "Inter", sans-serif;
+  color: var(--text-dark);
+}
+
+/* ===== Header ===== */
+.page-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.logged-in {
+  color: var(--text-light);
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+/* ===== Task Form ===== */
+.task-form-wrap {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px 28px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.task-form-wrap label {
+  font-size: 14px;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.task-form-wrap input,
+.task-form-wrap select {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  background-color: #f9fafb;
+  color: var(--text-dark);
+  transition: all 0.2s ease;
+  flex: 1 1 180px;
+}
+
+.task-form-wrap input:focus,
+.task-form-wrap select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+  background-color: #fff;
+}
+
+.task-form-wrap button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-form-wrap button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* ===== Table ===== */
+.table-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-table thead {
+  background-color: #f1f5f9;
+}
+
+.task-table th {
+  text-align: left;
+  padding: 14px 18px;
+  color: var(--text-dark);
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+}
+
+.task-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  color: var(--text-dark);
+}
+
+.task-table tr:hover {
+  background-color: #f9fafb;
+  transition: background 0.2s ease;
+}
+
+/* ===== Status Pills ===== */
+.status-pill {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+}
+
+.status-open {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status-pending-approval {
+  background-color: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.status-closed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+/* ===== Buttons ===== */
+.btn-hour,
+.btn-close,
+.btn-delete {
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-left: 6px;
+  transition: all 0.2s ease;
+}
+
+/* Blue “+1 hr” */
+.btn-hour {
+  background-color: #3b82f6;
+  color: white;
+}
+.btn-hour:hover {
+  background-color: #1d4ed8;
+}
+
+/* Yellow “Close” */
+.btn-close {
+  background-color: #fde68a;
+  color: #78350f;
+}
+.btn-close:hover {
+  background-color: #fcd34d;
+}
+
+/* Red “Delete” */
+.btn-delete {
+  background-color: var(--danger-bg);
+  color: var(--danger);
+}
+.btn-delete:hover {
+  background-color: #fecaca;
+}
+
+/* Align buttons to right */
+.task-table td:last-child {
+  text-align: right;
+}
+
+/* ===== Chart Section ===== */
+.chart-card {
+  margin-top: 40px;
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px 28px;
+  border: 1px solid var(--border);
+}
+
+.chart-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+}
+
+.logged-in-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  background-color: #f8fafc;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
