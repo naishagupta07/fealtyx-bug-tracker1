@@ -100,7 +100,7 @@ npm run dev
 
 http://localhost:3000
 
-Working Demo URL: [Deployed version if available or localhost link]
+Working Demo URL: https://fealtyx-bug-tracker.netlify.app/
 
 Demo Video: 
 https://drive.google.com/file/d/1o24BzQX28_JYAggbIsITILIrlRgahzsa/view?usp=sharing
