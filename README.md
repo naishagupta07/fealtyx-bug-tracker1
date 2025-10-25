@@ -41,9 +41,10 @@ You can log in using any of the following:
 
 | Role      | Username | Password |
 |------------|-----------|----------|
-| Developer  | dev1      | dev123     |
-| Developer  | dev2      | dev234    |
-| Developer  | dev3      | dev345    |
+| Developer  | dev1      | dev123   |
+| Developer  | dev2      | dev234   |
+| Developer  | dev3      | dev345   |
+| Developer  | dev4      | dev456   |
 | Manager    | manager1  | manager123  |
 
 ---
