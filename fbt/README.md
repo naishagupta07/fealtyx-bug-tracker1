@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐞 FealtyX Bug Tracker
 
-## Getting Started
+A **Bug/Task Tracking Dashboard** built with **Next.js**, allowing Developers and Managers to efficiently create, track, and manage project tasks.  
+This project was developed as part of the **FealtyX Assignment**.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Features
+
+### 👨‍💻 Developer Dashboard
+- Create, edit, and delete tasks/bugs.
+- Add task details: **Title**, **Description**, **Priority**, **Status**, **Assignee**, and **Dates**.
+- Track time spent on each task with the `+1 hr` button.
+- Close a bug — automatically sends it to the manager for approval.
+- View a trendline graph of tasks created over time.
+
+### 👩‍💼 Manager Dashboard
+- View all tasks from every developer.
+- Approve or Reopen bugs that are marked “Pending Approval”.
+- Monitor total time spent by developers on each task.
+
+### 🧠 Additional Highlights
+- Role-based login (Developer or Manager).
+- Persistent task data using **localStorage**.
+- Clean, responsive, and modern UI.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (React)
+- **Styling:** CSS
+- **State Management:** React Hooks + localStorage
+- **Data Source:** Local JSON (mock authentication)
+
+---
+
+## 🔐 Roles and Credentials
+
+You can log in using any of the following:
+
+| Role      | Username | Password |
+|------------|-----------|----------|
+| Developer  | dev1      | dev1     |
+| Developer  | dev2      | dev2     |
+| Developer  | dev3      | dev3     |
+| Manager    | manager   | manager  |
+
+---
+
+## 📊 Dashboard Overview
+
+- Developers can **add new tasks**, track hours, and close bugs.
+- Closed bugs go to the **Manager Dashboard** for review.
+- Managers can **approve** or **reopen** tasks.
+- Trendline graph displays daily task creation data.
+
+---
+
+## 🧩 Project Structure
+
+fbt/
+├── app/
+│ ├── login/ # Login page
+│ ├── dashboard/
+│ │ ├── tasks/ # Developer dashboard
+│ │ └── manager/ # Manager dashboard
+│ └── layout.tsx
+│
+├── public/
+├── package.json
+├── next.config.mjs
+└── README.md
+
+yaml
+Copy code
+
+---
+
+## 🧭 How to Run Locally
+
+1. Clone this repository  
+   ```bash
+   git clone https://github.com/naishagupta07/fealtyx-bug-tracker1.git
+2. Navigate to the folder
+
+cd fealtyx-bug-tracker1
+
+3. Install dependencies
+   
+npm install
+
+4. Run the development server
+
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Visit the app in your browser at http://localhost:3000
+   
+🎥 Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Demo Video: 
+https://drive.google.com/file/d/1o24BzQX28_JYAggbIsITILIrlRgahzsa/view?usp=sharing
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👩‍💻 Author
+Naisha Gupta
+📧 naisha190702@gmail.com
+🌐 https://github.com/naishagupta07
